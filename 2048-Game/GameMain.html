@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2048游戏</title>
+    <style type="text/css">
+        *{margin:0;padding:0;list-style-type:none;}
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="js/GameMain.js"></script>
+</head>
+<body>
+    <div id="game-panel">
+        <div class="div-round" id="box-main">
+            <div class="div-round box-lm" id="box0"></div>
+            <div class="div-round box-lm" id="box1"></div>
+            <div class="div-round box-lm" id="box2"></div>
+            <div class="div-round box-lm" id="box3"></div>
+            <div class="div-round box-lm" id="box4"></div>
+            <div class="div-round box-lm" id="box5"></div>
+            <div class="div-round box-lm" id="box6"></div>
+            <div class="div-round box-lm" id="box7"></div>
+            <div class="div-round box-lm" id="box8"></div>
+            <div class="div-round box-lm" id="box9"></div>
+            <div class="div-round box-lm" id="box10"></div>
+            <div class="div-round box-lm" id="box11"></div>
+            <div class="div-round box-lm" id="box12"></div>
+            <div class="div-round box-lm" id="box13"></div>
+            <div class="div-round box-lm" id="box14"></div>
+            <div class="div-round box-lm" id="box15"></div>
+            <div class="div-round box-lm" id="box16"></div>
+            <div class="div-round box-lm" id="box17"></div>
+            <div class="div-round box-lm" id="box18"></div>
+            <div class="div-round box-lm" id="box19"></div>
+            <div class="div-round box-lm" id="box20"></div>
+            <div class="div-round box-lm" id="box21"></div>
+            <div class="div-round box-lm" id="box22"></div>
+            <div class="div-round box-lm" id="box23"></div>
+            <div class="div-round box-lm" id="box24"></div>
+        </div>
+    </div>
+    <div style="width:200px;margin: 50px auto;">
+        <input type="button" value="开始" class="btn btn-primary" onClick="init();">
+        <input type="button" value="重新开始" class="btn btn-primary" onClick="if(window.confirm('您确定重新开始吗?')){init();}">
+    </div>
+    <div style="width:300px;margin: 50px auto;">
+        <input type="button" id="btn1" value="上" class="btn btn-primary" disabled onClick="operated(38);">
+        <input type="button" id="btn2" value="下" class="btn btn-primary" disabled onClick="operated(40);">
+        <input type="button" id="btn3" value="左" class="btn btn-primary" disabled onClick="operated(37);">
+        <input type="button" id="btn4" value="右" class="btn btn-primary" disabled onClick="operated(39);">
+    </div>
+</body>
+</html>
